@@ -26,7 +26,7 @@ const StarterForm = () => {
 
   return (
     <div className="flex mx-8 items-center gap-12 flex-col justify-center min-h-full">
-      <div className="w-full relative">
+      <div className="w-full relative max-w-3xl">
         <ChatGPTInput
           value={value}
           onChange={setValue}

@@ -37,7 +37,7 @@ export function ChatGPTInput({
   };
 
   return (
-    <div className={cn("w-full max-w-4xl mx-auto", className)}>
+    <div className={cn("w-full max-w-3xl mx-auto", className)}>
       {/* Main heading */}
       <div className="text-center mb-8">
         <h1 className="lg:text-4xl text-3xl font-normal text-white/90 mb-2">

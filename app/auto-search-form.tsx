@@ -127,8 +127,8 @@ export const AutoSearchForm = (props: { query: string }) => {
       )}
 
       <div className="flex mx-8 items-center relative gap-12 flex-col justify-center min-h-full">
-        <div className="w-full relative">
-          <div className={cn("w-full max-w-4xl mx-auto")}>
+        <div className="w-full relative max-w-3xl">
+          <div className={cn("w-full max-w-3xl mx-auto")}>
             {/* Main heading */}
             <div className="text-center mb-8">
               <h1 className="lg:text-4xl text-3xl font-normal text-white/90 mb-2">
@@ -147,7 +147,7 @@ export const AutoSearchForm = (props: { query: string }) => {
                     ref={textareaRef}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
-                    className="flex-1 w-full bg-transparent text-foreground placeholder:text-muted-foreground px-6 py-4 text-base resize-none outline-none min-h-[56px] max-h-32"
+                    className="flex-1 w-full bg-transparent text-foreground placeholder:text-muted-foreground px-6 py-4 text-base resize-none outline-none max-h-24"
                     rows={1}
                     placeholder="Ask anything"
                     style={{
