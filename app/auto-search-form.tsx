@@ -90,7 +90,7 @@ export const AutoSearchForm = (props: { query: string }) => {
 
       return () => clearTimeout(timer);
     }
-  }, [animationStep, buttonBounds]);
+  }, [animationStep, buttonBounds, props.query]);
 
   // Blinking cursor effect for typing
   useEffect(() => {
@@ -114,6 +114,7 @@ export const AutoSearchForm = (props: { query: string }) => {
             transform: "translate(-50%, -50%)",
           }}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/cursor.png"
             alt="cursor"
