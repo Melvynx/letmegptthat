@@ -17,7 +17,6 @@ export function ChatGPTInput({
   onChange,
   onSubmit,
   placeholder = "What can I help with?",
-  className,
 }: ChatGPTInputProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
