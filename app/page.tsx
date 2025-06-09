@@ -4,7 +4,6 @@ import { PageApp } from "./page-app";
 export default function Home() {
   return (
     <Suspense>
-      {" "}
       <PageApp />
     </Suspense>
   );
